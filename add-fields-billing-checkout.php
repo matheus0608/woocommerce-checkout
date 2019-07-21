@@ -7,7 +7,8 @@ function prefix_woocommerce_checkout_fields( $fields ) {
         'required' => false, 
         'clear' => false, 
         'type' => 'text', 
-        'class' => array('my-css') 
+        'class' => array('my-css') ,
+        'priority' => 23, // position in checkout
     );
 
     $fields['billing']['billing_neighborhood'] = array(
@@ -16,7 +17,8 @@ function prefix_woocommerce_checkout_fields( $fields ) {
         'required' => false, 
         'clear' => false, 
         'type' => 'text', 
-        'class' => array('my-css') 
+        'class' => array('my-css'),
+        'priority' => 23, // position in checkout
     );
 
 	return $fields; 
