@@ -1,5 +1,9 @@
 <?php 
-
+/**
+ * Hooks add fields checkout custom
+ *
+ * Source: https://docs.woocommerce.com/document/tutorial-customising-checkout-fields-using-actions-and-filters/
+ */
 function prefix_woocommerce_checkout_fields( $fields ) {
     $fields['billing']['billing_cpf'] = array(
         'label' => __( 'CPF' ),
@@ -7,7 +11,7 @@ function prefix_woocommerce_checkout_fields( $fields ) {
         'required' => false, 
         'clear' => false, 
         'type' => 'text', 
-        'class' => array('my-css') ,
+        'class' => array(''), //form-row-first, form-row-last, form-row-wide or custom class
         'priority' => 23, // position in checkout
     );
 
@@ -17,7 +21,7 @@ function prefix_woocommerce_checkout_fields( $fields ) {
         'required' => false, 
         'clear' => false, 
         'type' => 'text', 
-        'class' => array('my-css'),
+        'class' => array(''), //form-row-first, form-row-last, form-row-wide or custom class
         'priority' => 23, // position in checkout
     );
 
