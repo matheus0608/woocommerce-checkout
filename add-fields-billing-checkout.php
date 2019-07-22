@@ -24,7 +24,7 @@ function prefix_woocommerce_checkout_fields( $fields ) {
         'class' => array(''), //form-row-first, form-row-last, form-row-wide or custom class
         'priority' => 23, // position in checkout
     );
-
-	return $fields; 
+    
+    return $fields; 
 }
 add_filter( 'woocommerce_checkout_fields' , 'prefix_woocommerce_checkout_fields' );
