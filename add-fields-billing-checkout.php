@@ -9,6 +9,7 @@ function prefix_woocommerce_checkout_fields( $fields ) {
     $fields['billing']['billing_cpf'] = array(
         'label' => __( 'CPF' ),
         'placeholder' => '',
+        'default' => '', // add value
         'required' => false, 
         'clear' => false, 
         'type' => 'text', 
