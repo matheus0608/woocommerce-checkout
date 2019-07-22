@@ -11,7 +11,9 @@ function prefix_woocommerce_checkout_fields( $fields ) {
         'required' => false, 
         'clear' => false, 
         'type' => 'text', 
-        'class' => array(''), //form-row-first, form-row-last, form-row-wide or custom class
+        'input_class' => array( '' ), // add class in tag input
+        'label_class' => array( '' ), // add class in tag label
+        'class' => array( '' ), //form-row-first, form-row-last, form-row-wide or custom class, add class in tag p
         'priority' => 23, // position in checkout
     );
 
@@ -21,7 +23,9 @@ function prefix_woocommerce_checkout_fields( $fields ) {
         'required' => false, 
         'clear' => false, 
         'type' => 'text', 
-        'class' => array(''), //form-row-first, form-row-last, form-row-wide or custom class
+        'input_class' => array( '' ), // add class in tag input
+        'label_class' => array( '' ), // add class in tag label
+        'class' => array( '' ), //form-row-first, form-row-last, form-row-wide or custom class, add class in tag p
         'priority' => 23, // position in checkout
     );
     
